@@ -6,12 +6,12 @@ let hairyPotterObject =
 
 export const makePottery = (shape, weight,height) => {
 
-    
+    const newPottery = 
     {
-        hairyPotterObject.Potteryshape = shape,
-        hairyPotterObject.PotteryWeight = weight,
-        hairyPotterObject.PotteryHeight = height,
-        hairyPotterObject.id ++
+        Potteryshape : shape,
+        PotteryWeight : weight,
+        PotteryHeight : height,
+        PotteryID : hairyPotterObject.id++
     }
-    return hairyPotterObject
+    return newPottery
 }
