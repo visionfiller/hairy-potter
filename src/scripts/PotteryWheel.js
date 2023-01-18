@@ -4,14 +4,14 @@ let hairyPotterObject =
      id: 1
 }
 
-export const makePottery = (shape, weight,height) => {
+export const makePottery = (potteryShape, potteryWeight,potteryHeight) => {
 
     const newPottery = 
     {
-        Potteryshape : shape,
-        PotteryWeight : weight,
-        PotteryHeight : height,
-        PotteryID : hairyPotterObject.id++
+        shape : potteryShape,
+        weight : potteryWeight,
+        height : potteryHeight,
+        id : hairyPotterObject.id++
     }
     return newPottery
 }

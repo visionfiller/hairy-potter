@@ -4,6 +4,7 @@ import { makePottery } from "./PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
 import { usePottery } from "./PotteryCatalog.js"
+import { PotteryList } from "./PotteryList.js"
 
 
 // Make 5 pieces of pottery at the wheel
@@ -39,8 +40,15 @@ const bowlCheck = toSellOrNotToSell(bowlCracked)
 const plateCheck = toSellOrNotToSell(plateCracked)
 const tableCheck = toSellOrNotToSell(tableCracked)
 const lampCheck = toSellOrNotToSell(lampCracked)
-const potteryList = usePottery()
-console.log(potteryList)
+const potteryToBeSold = usePottery()
+console.log(potteryToBeSold)
+
+const parentHTMLElement = document.querySelector(".potteryList")
+
+
+parentHTMLElement.innerHTML = PotteryList(potteryToBeSold)
+
+
 // Invoke the component function that renders the HTML list
 
 
